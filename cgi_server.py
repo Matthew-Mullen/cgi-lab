@@ -16,7 +16,8 @@ https://pointlessprogramming.wordpress.com/2011/02/13/python-cgi-tutorial-1/
 
 
 from http.server import BaseHTTPRequestHandler, HTTPServer, CGIHTTPRequestHandler
- 
+import os
+print(os.environ)
 Server = HTTPServer
 handler = CGIHTTPRequestHandler
 port = 8080
